@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="btn-container" class="container col-4">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button id="create-rectangle" type="button" class="btn btn-outline-primary">Rectangle</button>
+            </div>
+            <input class="form-control" type='value' id='rectangle-height' placeholder="Height">
+            <input class="form-control" type='value' id='rectangle-width' placeholder="Width">
+        </div>
+        
+        <div class="input-group mb-3">
+            <input class="form-control" type='value' id='square-height' placeholder="Side Length">
+            <div class="input-group-append">
+                <button id="create-square" type="button" class="btn btn-outline-primary">Square</button>
+            </div>
+        </div>
+
+        <!-- <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button">Button</button>
+              
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+          </div> -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-primary" id="create-circle"  type="button" >Circle</button>
+
+            </div>
+            <input class="form-control" type='value' id='circle-radius' placeholder="Radius">
+        </div>
+
+        <div class="input-group">
+            <input class="form-control" type='value' id='triangle-height' placeholder="Height">
+            <button id="create-triangle" type="button" class="btn btn-outline-primary">Triangle</button>
+
+        </div>
+    </div>
+    
+    <div class="flex-container">
+        <div id='canvas-container'></div>
+        <div id='description-container'>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
